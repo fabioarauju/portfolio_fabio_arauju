@@ -1,55 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --main-bg-color: #f5f5dc;
     --main-txt-color: #4e342e;
     --main-details: #e07a5f;
 }
+
 /* reset global */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
 /* body color */
-body{
+body {
     background-color: var(--main-bg-color);
 }
 
 /* format h1 */
-h1{
+h1 {
     font-size: 12vmin;
     color: var(--main-txt-color);
     font-weight: 700;
 }
 
 /* format h2 */
-h2{
+h2 {
     font-size: 8vmin;
     color: black;
 }
 
 /* format p */
-p{
+p {
     font-size: 3vmin;
     color: black;
 }
 
 /* format icon */
-i{
+i {
     font-size: 14vmin;
     color: var(--main-txt-color);
 }
 
 /* class icons */
-.icons{
+.icons {
     display: flex;
     justify-content: space-evenly;
 }
 
 /* header */
-#container_menu{
+#container_menu {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -57,21 +58,21 @@ i{
     align-items: center;
 }
 
-header{
+header {
     width: 60%;
     background-color: var(--main-details);
     padding: 10px 0px;
     border-radius: 40px;
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
     font-size: 3vmin;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
 }
@@ -80,7 +81,7 @@ header a{
 
 /* about */
 
-#container_about{
+#container_about {
     width: 80%;
     margin: 0 auto;
     padding: 25px;
@@ -90,7 +91,7 @@ header a{
 
 /* skills */
 
-#container_skill{
+#container_skill {
     width: 80%;
     margin: 0 auto;
 }
@@ -99,7 +100,7 @@ header a{
 
 /* projects */
 
-#container_projects{
+#container_projects {
     width: 80%;
     margin: 0 auto;
 }
@@ -108,21 +109,23 @@ header a{
 
 /* contacts */
 
-#container_contact{
+#container_contact {
     width: 80%;
     margin: 0 auto;
 }
 
-#container_contact .icons{
+#container_contact .icons {
     flex-direction: column;
+    justify-content: space-between;
+    gap: 2vmin;
 }
 
-#container_contact i{
+#container_contact i {
     font-size: 5vmin;
-    padding: 10px 5px;
+    padding: 0px 5px;
 }
 
-#container_contact a{
+#container_contact a {
     text-decoration: none;
     color: var(--main-details);
     font-size: 3vmin;
@@ -130,3 +133,9 @@ header a{
 }
 
 /* end contacts */
+
+@media(max-width: 1000px) {
+    header {
+        width: 80%;
+    }
+}
