@@ -58,15 +58,15 @@ i{
 }
 
 header{
-    width: 90%;
+    width: 60%;
     background-color: var(--main-details);
-    padding: 10px 15px;
+    padding: 10px 0px;
     border-radius: 40px;
 }
 
 header ul{
     display: flex;
-    gap: 40px;
+    justify-content: space-around;
     list-style: none;
     font-size: 3vmin;
 }
