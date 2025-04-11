@@ -58,6 +58,7 @@ i{
 }
 
 header{
+    width: 90%;
     background-color: var(--main-details);
     padding: 10px 15px;
     border-radius: 40px;
